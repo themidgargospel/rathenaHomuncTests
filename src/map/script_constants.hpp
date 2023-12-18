@@ -10349,6 +10349,8 @@
 	export_constant(MER_SERA);
 	export_constant(MER_DIETER);
 	export_constant(MER_ELEANOR);
+	export_constant(MER_TESTHOM);
+	export_constant(MER_TEST2);
 
 	#undef export_constant
 	#undef export_constant2

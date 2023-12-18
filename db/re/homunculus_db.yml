@@ -918,31 +918,155 @@ Body:
     SkillTree:
       - Skill: MH_STYLE_CHANGE
         MaxLevel: 1
-        RequiredLevel: 100
+        RequiredLevel: 1
       - Skill: MH_SONIC_CRAW
         MaxLevel: 5
-        RequiredLevel: 100
+        RequiredLevel: 1
       - Skill: MH_SILVERVEIN_RUSH
         MaxLevel: 10
-        RequiredLevel: 114
+        RequiredLevel: 1
       - Skill: MH_MIDNIGHT_FRENZY
         MaxLevel: 10
-        RequiredLevel: 128
+        RequiredLevel: 1
       - Skill: MH_TINDER_BREAKER
         MaxLevel: 5
-        RequiredLevel: 100
+        RequiredLevel: 1
       - Skill: MH_CBC
         MaxLevel: 5
-        RequiredLevel: 112
+        RequiredLevel: 1
       - Skill: MH_EQC
         MaxLevel: 5
-        RequiredLevel: 133
+        RequiredLevel: 1
       - Skill: MH_BRUSHUP_CLAW
         MaxLevel: 10
-        RequiredLevel: 210
+        RequiredLevel: 1
       - Skill: MH_BLAZING_AND_FURIOUS
         MaxLevel: 10
-        RequiredLevel: 215
+        RequiredLevel: 1
       - Skill: MH_THE_ONE_FIGHTER_RISES
         MaxLevel: 10
-        RequiredLevel: 230
+        RequiredLevel: 1
+      - Skill: MH_SUMMON_LEGION
+        MaxLevel: 5
+        RequiredLevel: 1
+  - Class: TestHom
+    Name: TestHom
+    Food: Zargon
+    Element: Poison
+    Size: Medium
+    Status:
+      - Type: Hp
+        Base: 320
+        GrowthMinimum: 60
+        GrowthMaximum: 300
+      - Type: Sp
+        Base: 10
+        GrowthMinimum: 10
+        GrowthMaximum: 20
+      - Type: Str
+        Base: 20
+        GrowthMinimum: 20
+        GrowthMaximum: 40
+      - Type: Agi
+        Base: 17
+        GrowthMinimum: 10
+        GrowthMaximum: 50
+      - Type: Vit
+        Base: 35
+        GrowthMinimum: 24
+        GrowthMaximum: 48
+      - Type: Int
+        Base: 11
+        GrowthMinimum: 5
+        GrowthMaximum: 15
+      - Type: Dex
+        Base: 24
+        GrowthMinimum: 12
+        GrowthMaximum: 36
+      - Type: Luk
+        Base: 12
+        GrowthMinimum: 2
+        GrowthMaximum: 10
+    SkillTree:
+      - Skill: MH_STYLE_CHANGE
+        MaxLevel: 1
+        RequiredLevel: 5
+      - Skill: MH_SONIC_CRAW
+        MaxLevel: 5
+        RequiredLevel: 1
+      - Skill: MH_SILVERVEIN_RUSH
+        MaxLevel: 10
+        RequiredLevel: 11
+      - Skill: MH_MIDNIGHT_FRENZY
+        MaxLevel: 10
+        RequiredLevel: 12
+      - Skill: MH_TINDER_BREAKER
+        MaxLevel: 5
+        RequiredLevel: 10
+      - Skill: MH_CBC
+        MaxLevel: 5
+        RequiredLevel: 11
+      - Skill: MH_EQC
+        MaxLevel: 5
+        RequiredLevel: 13
+      - Skill: MH_BRUSHUP_CLAW
+        MaxLevel: 10
+        RequiredLevel: 21
+      - Skill: MH_BLAZING_AND_FURIOUS
+        MaxLevel: 10
+        RequiredLevel: 21
+      - Skill: MH_THE_ONE_FIGHTER_RISES
+        MaxLevel: 10
+        RequiredLevel: 23
+  - Class: Test2
+    Name: Test2
+    Food: Zargon
+    Element: Poison
+    Size: Medium
+    Status:
+      - Type: Hp
+        Base: 320
+        GrowthMinimum: 60
+        GrowthMaximum: 300
+      - Type: Sp
+        Base: 10
+        GrowthMinimum: 10
+        GrowthMaximum: 20
+      - Type: Str
+        Base: 20
+        GrowthMinimum: 20
+        GrowthMaximum: 40
+      - Type: Agi
+        Base: 17
+        GrowthMinimum: 10
+        GrowthMaximum: 50
+      - Type: Vit
+        Base: 35
+        GrowthMinimum: 24
+        GrowthMaximum: 48
+      - Type: Int
+        Base: 11
+        GrowthMinimum: 5
+        GrowthMaximum: 15
+      - Type: Dex
+        Base: 24
+        GrowthMinimum: 12
+        GrowthMaximum: 36
+      - Type: Luk
+        Base: 12
+        GrowthMinimum: 2
+        GrowthMaximum: 10
+    SkillTree:
+      - Skill: MH_POLISHING_NEEDLE
+        MaxLevel: 10
+        RequiredLevel: 1
+      - Skill: MH_NEEDLE_STINGER
+        MaxLevel: 10
+        RequiredLevel: 1
+      - Skill: MH_XENO_SLASHER
+        MaxLevel: 10
+        RequiredLevel: 1
+      - Skill: ML_SPIRALPIERCE
+        MaxLevel: 5
+        RequiredLevel: 1
+

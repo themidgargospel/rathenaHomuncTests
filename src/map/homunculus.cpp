@@ -175,6 +175,9 @@ int hom_class2mapid(int hom_class)
 		case 6050:				return MAPID_SERA;
 		case 6051:				return MAPID_DIETER;
 		case 6052:				return MAPID_ELANOR;
+		//Testing purposes
+		case 6080:				return MAPID_TESTHOM;
+		case 6081:				return MAPID_TEST2;
 
 		default:				return -1;
 	}
@@ -1476,14 +1479,20 @@ bool HomunculusDatabase::parseStatusNode(const std::string &nodeName, const std:
 uint64 HomunculusDatabase::parseBodyNode(const ryml::NodeRef &node) {
 	std::string class_name;
 
-	if (!this->asString(node, "Class", class_name))
+	if (!this->asString(node, "Class", class_name)) {
+		std::cerr << "Failed to read homunculus class name." << std::endl; //new
 		return 0;
+	}
+
+	std::cout << "Class Name: " << class_name << std::endl;  //new
 
 	std::string class_name_constant = "MER_" + class_name;
 	int64 class_tmp;
 
+	std::cout << "Class Name Constant: " << class_name_constant << std::endl; //new
+
 	if (!script_get_constant(class_name_constant.c_str(), &class_tmp)) {
-		this->invalidWarning(node["Class"], "Invalid homunculus Class \"%s\", skipping.\n", class_name.c_str());
+		this->invalidWarning(node["Class"], "Invalid homunculus Class \"%s\", skipping.\n", class_name.c_str());  // THIS IS THE CHECK FOR NEW HOMUNCS
 		return 0;
 	}
 
@@ -1523,7 +1532,7 @@ uint64 HomunculusDatabase::parseBodyNode(const ryml::NodeRef &node) {
 		int64 constant;
 
 		if (!script_get_constant(evo_class_name_constant.c_str(), &constant)) {
-			this->invalidWarning(node["EvolutionClass"], "Invalid homunculus Evolution Class %s, skipping.\n", evo_class_name.c_str());
+			this->invalidWarning(node["EvolutionClass"], "Invalid homunculus Evolution Class %s, skipping.\n", evo_class_name.c_str()); 
 			return 0;
 		}
 

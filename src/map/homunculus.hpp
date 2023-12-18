@@ -123,6 +123,9 @@ enum homun_mapid {
 	MAPID_SERA,
 	MAPID_DIETER,
 	MAPID_ELANOR,
+// Custom Homunculi
+	MAPID_TESTHOM = HOM_REG|0x0, //midgar
+	MAPID_TEST2, //midgar
 };
 
 /// Homunculus class constants
@@ -150,6 +153,10 @@ enum e_homun_classid : uint16 {
 	MER_SERA,
 	MER_DIETER,
 	MER_ELEANOR,
+
+	// Testing Purposes
+	MER_TESTHOM = 6080, //midgar
+	MER_TEST2, //midgar
 };
 
 /// Homunculus type
